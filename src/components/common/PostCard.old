@@ -4,8 +4,6 @@ import { Link } from 'gatsby'
 import { Tags } from '@tryghost/helpers-gatsby'
 import { readingTime as readingTimeHelper } from '@tryghost/helpers'
 
-const moment = require('moment');
-
 const PostCard = ({ post }) => {
     const url = `/${post.slug}/`
     const readingTime = readingTimeHelper(post)
@@ -20,8 +18,6 @@ const PostCard = ({ post }) => {
                 {post.tags && <div className="post-card-tags"> <Tags post={post} visibility="public" autolink={false} /></div>}
                 {post.featured && <span>Featured</span>}
                 <h2 className="post-card-title">{post.title}</h2>
-                <h6 className="date-and-reading-time">Reading Time: {post.reading_time} minutes</h6>
-                <h6 className="date-and-reading-time">{moment(post.published_at).format("Do MMM YYYY")}</h6>
             </header>
             <section className="post-card-excerpt">{post.excerpt}</section>
             <footer className="post-card-footer">
@@ -48,8 +44,6 @@ PostCard.propTypes = {
         title: PropTypes.string.isRequired,
         feature_image: PropTypes.string,
         featured: PropTypes.bool,
-        reading_time: PropTypes.string,
-        published_at: PropTypes.string,
         tags: PropTypes.arrayOf(
             PropTypes.shape({
                 name: PropTypes.string,

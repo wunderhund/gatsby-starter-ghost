@@ -46,7 +46,7 @@ To use your own install, you will need to edit the `.ghost.json` config file wit
 
 Next, update the `contentApiKey` value to a key associated with the Ghost site. A key can be provided by creating an integration within Ghost Admin. Navigate to Integrations and click "Add new integration". Name the integration appropriately and click create.
 
-Finally, configure your desired URL in `siteConfig.js`, so links (e. g. canonical links) are generated correctly. You can also update other default values, such as `postsPerPage` in this file.
+Finally, configure your desired URL in `src/utils/siteConfig.js`, so links (e. g. canonical links) are generated correctly. You can also update other default values, such as `postsPerPage` in this file.
 
 To use this starter without issues, your Ghost installation needs to be at least on version `2.10.0`.
 

@@ -7,7 +7,6 @@ what's here to work the way you'd like it to.
 
 # Table of Contents
 
-- Fonts
 - Vars
 - Reset
 - Defaults
@@ -16,16 +15,6 @@ what's here to work the way you'd like it to.
 - Author Archives
 - Pagination
 - Footer
-*/
-@import "prism.css";
-
-/* Fonts
-/* ---------------------------------------------------------- */
-@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@450&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
-
 
 /* Variables
 /* ---------------------------------------------------------- */
@@ -38,12 +27,11 @@ what's here to work the way you'd like it to.
     --color-secondary: #5B7A81;
     --color-border: #c7d5d8;
     --color-bg: #f5f5f5;
-    --color-titles: #3f3f3f;
 
     /* Fonts */
-    --font-sans-serif: 'Jost', sans-serif; /*"Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;*/
-    --font-serif: 'EB Garamond', serif;
-    --font-mono: 'Fira Code', monospace;
+    --font-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    --font-serif: Georgia, Times, serif;
+    --font-mono: Menlo, Courier, monospace;
     --font-light: 100;
     --font-normal: 400;
     --font-bold: 700;
@@ -165,14 +153,13 @@ q:after {
 table {
     border-spacing: 0;
     border-collapse: collapse;
-    margin: 0 0 5em 0;
 }
 img {
     max-width: 100%;
 }
 html {
     box-sizing: border-box;
-    font-family: var(--font-sans-serif);
+    font-family: sans-serif;
 
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
@@ -302,19 +289,11 @@ textarea {
 table {
     border-spacing: 0;
     border-collapse: collapse;
-    margin: 0 0 5em 0;
 }
 td,
 th {
-    text-align: left;
-    padding: 5px;
-    padding-right: 15px;
+    padding: 0;
 }
-th {
-    border-bottom: 1px solid #ddd;
-}
-tr:nth-child(even) {background-color: #f2f2f2}
-
 
 /* Defaults
 /* ---------------------------------------------------------- */
@@ -331,7 +310,7 @@ html {
 body {
     overflow-x: hidden;
     color: #3c484e;
-    font-family: var(--font-sans-serif); /* -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     font-size: 1.5rem;
     line-height: 1.6em;
     font-weight: 400;
@@ -441,9 +420,8 @@ blockquote {
 
 blockquote p {
     margin: 0.8em 0;
-    font-size: 1em;
+    font-size: 1.2em;
     font-weight: 300;
-    font-family: var(--font-serif);
 }
 
 blockquote small {
@@ -531,7 +509,7 @@ h5 {
 }
 
 h6 {
-    margin: 0 0 0 0;
+    margin: 1.5em 0 0.5em 0;
     font-size: 1.4rem;
     font-weight: 500;
 }
@@ -547,7 +525,7 @@ h6 {
 }
 
 .container {
-    max-width: 80rem;
+    max-width: 1120px;
     margin: 0 auto;
     padding: 0 4vw;
 }
@@ -561,9 +539,7 @@ h6 {
 .content-body {
     display: flex;
     flex-direction: column;
-    font-family: var(--font-sans-serif);
-    font-size: 90%;
-    margin: 2.5rem 0 0.5em 0;
+    font-family: var(--font-serif);
 }
 
 .post-full-content {
@@ -575,7 +551,7 @@ h6 {
 .post-feature-image img {
     margin: 0 0 3vw;
     width: 100%;
-    height: 200px;
+    height: 500px;
     object-fit: cover;
 }
 
@@ -592,7 +568,6 @@ h6 {
     margin: 1.0em 0 0.5em 0;
     font-size: 3.4rem;
     font-weight: 700;
-    align-items: center;
 }
 @media (max-width: 500px) {
     .content-body h1 {
@@ -601,15 +576,13 @@ h6 {
 }
 
 .content-title {
-    margin: 0 0 0.5rem;
+    margin: 0 0 0.8em;
     font-size: 5rem;
-    font-family: var(--font-serif);
 }
 @media (max-width: 500px) {
     .content-title {
         margin: 0.8em 0;
         font-size: 3.4rem;
-        font-family: var(--font-serif);
     }
     .content {
         font-size: 1.8rem;
@@ -654,7 +627,7 @@ h6 {
     margin: 0.5em 0;
     padding: 1em 0 1.5em;
     border: 0;
-    font-family: var(--font-serif);
+    font-family: Georgia,serif;
     color: var(--color-primary);
     font-style: italic;
     font-size: 3.2rem;
@@ -663,16 +636,15 @@ h6 {
 }
 
 .content-body h6 {
-    margin: 0 0 1.5em 0;
+    margin: 0.5em 0 0.2em 0;
     font-size: 2.0rem;
     font-weight: 700;
 }
 
 .content-body figure {
     margin: 0.4em 0 1.6em;
-    font-size: 1.5rem;
+    font-size: 2.8rem;
     font-weight: 700;
-    text-align: center;
 }
 
 .content-body pre {
@@ -681,33 +653,9 @@ h6 {
     line-height: 1.4em;
     white-space: pre-wrap;
     padding: 20px;
-    background-color: var(--color-bg);
-    color: var(--color-base);
-}
-@media (max-width: 500px) {
-    .content-body pre {
-        margin: 0 0 1.4rem;
-        padding: 0px;
-        font-size: 1.4rem;
-        line-height: 1.5em;
-        white-space: pre;
-        overflow-x: auto;
-    }
-}
-
-.date-and-reading-time {
-    margin: 0 0 0 0;
-    font-family: var(--font-sans-serif);
-    font-size: 1.4rem;
-    font-weight: 500;
-}
-
-.post-top {
-    margin: 1rem 0 0 0;
-}
-
-.post-bottom {
-    margin: 0 0 1rem 0;
+    background: var(--color-base);
+    color: #fff;
+    border-radius: 12px;
 }
 
 /* Header
@@ -716,8 +664,8 @@ h6 {
 .site-head {
     padding-top: 20px;
     padding-bottom: 20px;
-    color: var(--color-titles);
-    background: var(--color-bg);
+    color: #fff;
+    background: var(--color-base);
     background-position: center;
     background-size: cover;
 }
@@ -725,8 +673,8 @@ h6 {
 .site-nav-item {
     display: inline-block;
     padding: 5px 10px;
-    color: var(--color-titles);
-    opacity: 0.9;
+    color: #fff;
+    opacity: 0.7;
 }
 
 .site-nav-item:hover {
@@ -744,7 +692,7 @@ h6 {
 }
 
 .site-mast {
-    display: block;
+    display: flex;
     align-items: center;
     justify-content: space-between;
 }
@@ -761,22 +709,16 @@ h6 {
 .site-banner {
     max-width: 80%;
     margin: 0 auto;
-    padding: 2vw 0;
+    padding: 10vw 0;
     text-align: center;
 }
 
 .site-banner-title {
     margin: 0;
     padding: 0;
-    color: var(--color-titles);
+    color: #fff;
     font-size: 4rem;
     line-height: 1.3em;
-    font-family: var(--font-serif);
-}
-
-.site-banner-title:hover {
-    text-decoration: none;
-    opacity: 1
 }
 
 .site-banner-desc {
@@ -784,9 +726,7 @@ h6 {
     padding: 0;
     font-size: 2.4rem;
     line-height: 1.3em;
-    opacity: 0.9;
-    color: var(--color-titles);
-    font-family: var(--font-serif);
+    opacity: 0.7;
 }
 
 .site-nav {
@@ -800,21 +740,15 @@ h6 {
     margin: 0 20px 0 -10px;
 }
 
-.site-nav-center {
-    max-width: 100rem;
-    margin-left: auto;
-    margin-right: auto;
-    border: var(--color-titles) 1px solid;
-    border-radius: var(--radius);
-}
-
 .site-nav-button {
     display: inline-block;
     padding: 5px 10px;
-    color: var(--color-titles);
+    border: #fff 1px solid;
+    color: #fff;
     font-size: 1.3rem;
     line-height: 1em;
-    opacity: 0.9;
+    border-radius: var(--radius);
+    opacity: 0.7;
 }
 
 .site-nav-button:hover {
@@ -825,9 +759,6 @@ h6 {
 /* ---------------------------------------------------------- */
 
 .site-main {
-    max-width: 100rem;
-    margin-left: auto;
-    margin-right: auto;
     padding: 4vw 0;
 }
 
@@ -835,7 +766,10 @@ h6 {
 /* ---------------------------------------------------------- */
 
 .post-feed {
-    display: block;
+    display: grid;
+    justify-content: space-between;
+    grid-gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 @media (max-width: 980px) {
@@ -852,7 +786,6 @@ h6 {
 .post-card {
     color: inherit;
     text-decoration: none;
-    margin: 10px;
 }
 
 .post-card:hover {
@@ -870,13 +803,9 @@ h6 {
 .post-card-title {
     margin: 0 0 10px 0;
     padding: 0;
-    color: var(--color-headings);
-    font-family: var(--font-serif);
-    font-size: 2.5rem;
 }
 
 .post-card-excerpt {
-    margin: 1.5rem 0 0 0;
     font-size: 1.6rem;
     line-height: 1.55em;
 }
@@ -920,6 +849,7 @@ h6 {
 .post-card-avatar .author-profile-image {
     display: block;
     width: 100%;
+    background: var(--color-secondary);
     border-radius: 100%;
     object-fit: cover;
 }
@@ -939,7 +869,6 @@ h6 {
 
 .tag-header h1 {
     margin: 0 0 1rem 0;
-    font-family: var(--font-serif);
 }
 
 .tag-header p {
@@ -1065,21 +994,6 @@ h6 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-.site-foot-nav-center {
-    max-width: 100rem;
-    margin-left: auto;
-    margin-right: auto;
-    border: var(--color-titles) 1px solid;
-    border-radius: var(--radius);
-}
-
-.site-foot-nav-item {
-        display: inline-block;
-        padding: 5px 10px;
-        color: var(--color-titles);
-        opacity: 0.9;
 }
 
 .site-foot-nav a {
@@ -1210,27 +1124,39 @@ h6 {
     white-space: nowrap;
 }
 
-.kg-image {
+/* Gallery Styles
+/* ---------------------------------------------------------- */
+.kg-gallery-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1040px;
+    width: 100%;
+  }
+  
+  .kg-gallery-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .kg-gallery-image img {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-height: 35rem;
-}
-
-/* for image captions */
-figcaption {
-    font-style: var(--font-bold);
-    font-family: var(--font-sans-serif);
-    display: inherit;
-    text-align: center;
-    font-size: 1.5rem;
-}
-@media (max-width: 500px) {
-    figcaption {
-        font-style: var(--font-bold);
-        font-family: var(--font-sans-serif);
-        display: inherit;
-        text-align: center;
-        font-size: 1.25rem;
-    }
-}
+    margin: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .kg-gallery-row:not(:first-of-type) {
+    margin: 0.75em 0 0 0;
+  }
+  
+  .kg-gallery-image:not(:first-of-type) {
+    margin: 0 0 0 0.75em;
+  }
+  
+  .kg-gallery-card + .kg-image-card.kg-width-wide,
+  .kg-gallery-card + .kg-gallery-card,
+  .kg-image-card.kg-width-wide + .kg-gallery-card,
+  .kg-image-card.kg-width-wide + .kg-image-card.kg-width-wide {
+    margin: -2.25em 0 3em;
+  }

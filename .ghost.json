@@ -1,10 +1,10 @@
 {
   "development": {
-    "apiUrl": "https://gatsby.ghost.io",
-    "contentApiKey": "9cc5c67c358edfdd81455149d0"
+    "apiUrl": "http://ggjam-backend_ghost_1:2368",
+    "contentApiKey": "c7c41c83492f4250c8f24d05d3"
   },
   "production": {
-    "apiUrl": "https://gatsby.ghost.io",
-    "contentApiKey": "9cc5c67c358edfdd81455149d0"
+    "apiUrl": "http://ggjam-backend_ghost_1:2368",
+    "contentApiKey": "c7c41c83492f4250c8f24d05d3"
   }
 }
