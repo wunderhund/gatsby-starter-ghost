@@ -54,3 +54,6 @@ Options included in the Makefile:
 
 ### Further References
 More detail about how this Gatsby static site generator works can be found at its upstream project, [gatsby-starter-ghost](https://github.com/TryGhost/gatsby-starter-ghost.git).
+
+### Acknowledgements
+Ghost S3 storage: https://github.com/docker-library/ghost/issues/195#issuecomment-604754501
