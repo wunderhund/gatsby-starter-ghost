@@ -78,3 +78,6 @@ yarn-error.log
 
 # Local Netlify folder
 .netlify
+
+# Keybase proof
+static/keybase.txt
