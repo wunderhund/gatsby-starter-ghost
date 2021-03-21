@@ -1,6 +1,6 @@
 
 INTERACTIVE := $(shell [ -t 0 ] && echo -it)
-ENV_FILE := dev.env
+ENV_FILE := .env.development
 
 DOCKER_TAG := ggjam-frontend
 DOCKER_NETWORK := ggjam-backend_ggjam
