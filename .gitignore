@@ -73,6 +73,7 @@ typings/
 # Docs Custom
 .cache/
 public
+frontend.tar
 yarn-error.log
 .netlify/
 
