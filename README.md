@@ -1,3 +1,26 @@
+# GGJAM Frontend
+This is a Gatsby frontend for Ghost based on [gatsby-starter-ghost](https://github.com/TryGhost/gatsby-starter-ghost.git).
+
+This version's styling has been customized for my personal blog:
+![Craig's Blog](static/images/blog-sample.png "Sample of Craig's Blog")
+
+This is a Gatsby static site generator that queries a Ghost CMS backend to generate static site files for a blog. 
+
+It is intended to run primarily in the AWS infrastructure I built for it, located in my [ggjam](https://github.com/wunderhund/ggjam) repo, or with my customized Ghost backend setup in my [ggjam-backend](https://github.com/wunderhund/ggjam-backend) repo.
+
+Once the static site files are created, they can be hosted from from anywhere. I host my personal copy in an AWS S3 bucket.
+
+## Keeping Up to Date
+This repo is a fork of [gatsby-starter-ghost](https://github.com/TryGhost/gatsby-starter-ghost.git), which is updated fairly regularly. In order to pull the latest updates from the upstream, use:
+```
+git remote add upstream git://github.com/TryGhost/gatsby-starter-ghost.git
+git fetch upstream
+git pull upstream master
+```
+
+### Setup
+The contents of the original README are below:
+
 # Gatsby Starter Ghost
 
 A starter template to build lightning fast websites with [Ghost](https://ghost.org) & [Gatsby](https://gatsbyjs.org)
