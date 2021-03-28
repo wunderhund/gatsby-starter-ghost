@@ -2,7 +2,7 @@
 This is a Gatsby frontend for Ghost based on [gatsby-starter-ghost](https://github.com/TryGhost/gatsby-starter-ghost.git).
 
 This version's styling has been customized for my personal blog:
-![Craig's Blog](static/images/blog-sample.png "Sample of Craig's Blog")
+![Craig's Blog](static/images/blog-sample-small.png "Sample of Craig's Blog")
 
 This is a Gatsby static site generator that queries a Ghost CMS backend to generate static site files for a blog. 
 
